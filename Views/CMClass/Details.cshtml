@@ -1,0 +1,42 @@
+﻿@model KaizenAPI.Models.CMClass
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CMClass</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Class_Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Class_Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Class)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Class)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sections)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sections)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { @id = Model.Class_Id}) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
